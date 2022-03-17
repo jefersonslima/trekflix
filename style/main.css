@@ -1,0 +1,72 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+    --branco: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: helvetica;
+    color: var(--branco);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.logo{
+    color: var(--vermelho);
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+.subtitle{
+    color: var(--branco);
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color:#fff;
+
+}
+
+/*principal serie*/
+
+.main-serie{
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/startrek_cover.jpg);
+    background-size: cover;
+    width: 533px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-serie .description{
+    margin-bottom: 90px;
+}
+
+.title{
+    font-size: 30px;
+}
