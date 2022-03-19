@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    
+    <!--owl css-->
+    <link rel="stylesheet" href="style/ow/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/ow/owl.theme.default.min.css">
+
+    
+    
     <title>TREKFLIX</title>
 </head>
 <body>
     <header>
         <div class="container">
             <h1 class="logo">TREKFLIX</h1>
+            
             <nav>
                 <A href="#">INÍCIO</A>
                 <A href="#">SÉRIES</A>
                 <A href="#">FILMES</A>
             </nav>
-        </div>
-        
-        <div class="subtitle">
-            <h2>Vida longa e próspera</h2>
-        </div>
+      
         
     </header>
     
@@ -31,13 +38,42 @@
                 <p class="description">O imperturbável Cap. James T. Kirk leva a icônica e intergalática tripulação da USS Enterprise nesta série pioneira sobre a exploração espacial.</p>
             </div>
             <div class="buttons">
-                <button role="button" class="button">ASSISTA AGORA</button>
-                <button role="button" class="button">MAIS INFO</button>
+                <button role="button" class="button">ASSISTA AGORA
+                    <i class="fa-solid fa-circle-play"></i>
+                </button>
+                <button role="button" class="button">MAIS INFO
+                    <i class="fa-solid fa-circle-info"></i>
+                </button>
             </div>
             
         </div>
         
     </main>
-    
+
+    <div class="carousel-serie">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-serie" src="img/startrek_poster.jpg">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/stdiscovery_cover.jpg">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/stpicard_cover.jpg">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/stvoyager_cover.jpg">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/sttng_cover.jpg">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/aa588840e0.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
+
 </body>
 </html>
